@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    background: #54d5d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 25px;
+}
+img{
+    max-width: 75%;
+    max-height: 75%;
+    display: block;
+}
+#user-div {
+    border: 2px solid black;
+    border-radius: 60px;
+    background: grey;
+    width: 40%;
+    height: 37%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.75), 0 0 5px 2px rgba(0, 0, 0, 0.75);
+}
+#result {
+    width: 100%;
+    height: 10vh;
+    font-size: 32px;
+    text-shadow: 0 0 3px red, 0 0 1px red;
+    transition: 1s;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sansita Swashed', cursive;
+    box-shadow: 
+    inset 0px 11px 16px -10px rgba(0, 0, 0, 0.99),
+    inset 0px -11px 4px -10px rgba(0, 0, 0, 0.99); 
+}
+#computer-div {
+    border: 2px solid black;
+    border-radius: 100px;
+    background: grey;
+    width: 312px;
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;   
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.75), 0 0 5px 2px rgba(0, 0, 0, 0.75);
+}
+#schäre {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #54d5d1;
+    font-size: 42px;
+    color:gold;
+    font-family: 'Sansita Swashed', cursive;
+    text-shadow: 0 0 3px black, 0 0 3px black;
+    box-shadow: 0 0 5px 2px black, 0 0 5px 2px;
+    cursor: pointer;
+}
+#stein {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #54d5d1;
+    font-size: 42px;
+    color:gold;
+    font-family: 'Sansita Swashed', cursive;
+    text-shadow: 0 0 3px black, 0 0 3px black;
+    box-shadow: 0 0 5px 2px black, 0 0 5px 2px;
+    cursor: pointer;
+}
+#papir {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #54d5d1;
+    font-size: 42px;
+    color:gold;
+    font-family: 'Sansita Swashed', cursive;
+    text-shadow: 0 0 3px black, 0 0 3px black;
+    box-shadow: 0 0 5px 2px black, 0 0 5px 2px black;
+    cursor: pointer;
+}
+
+
+.class_div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #54d5d1;
+    color:gold;
+    font-family: 'Sansita Swashed', cursive;
+    text-shadow: 0 0 3px black, 0 0 3px black;
+    box-shadow: 0 0 5px 2px black, 0 0 5px 2px;
+}
+.class_h3 {
+    font-size: 42px;
+    font-family: 'Sansita Swashed', cursive;
+    text-shadow: 0 0 3px black, 0 0 3px black;
+}
+#bottom-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    background: #737373;
+    width: 90%;
+    height: 38%;
+    border: none;
+    border: 2px solid black;
+    border-bottom-left-radius: 170px;
+    border-bottom-right-radius: 170px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.75), 0 0 5px 2px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+#compPoints {
+    border: 2px solid black;
+    border-radius: 100px;
+    background: grey;
+    width: 206px;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;   
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.75), 0 0 5px 2px rgba(0, 0, 0, 0.75);
+}
+#userPoints {
+    border: 2px solid black;
+    border-radius: 100px;
+    background: grey;
+    width: 206px;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;    
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.75), 0 0 5px 2px rgba(0, 0, 0, 0.75);
+}
+.score {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 150px;
+    text-shadow: 2px 10px 5px rgb(68, 68, 68), 2px 10px 10px rgb(255, 62, 62);
+}
+span {
+    font-size: 190px;
+    margin-bottom: 115px;
+    overflow: visible;
+}
